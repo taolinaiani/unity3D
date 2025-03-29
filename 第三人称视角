@@ -1,0 +1,18 @@
+（1）导入standard Assets中的characters.'
+（2）GUIText has been removed修改
+  // 修改前
+public GUIText camSwitchButton;
+// 修改后
+using UnityEngine.UI; // 添加命名空间
+public Text camSwitchButton; // 使用新的 Text 组件
+
+
+// 修改前
+[RequireComponent(typeof(GUITexture))]
+// 修改后
+using UnityEngine.UI; // 添加命名空间
+[RequireComponent(typeof(Image))] // 使用 Image 组件
+
+（3）
+
+
